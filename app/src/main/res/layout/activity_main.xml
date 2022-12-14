@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background_activity">
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="191dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/epis" />
+
+    <EditText
+        android:id="@+id/user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="156dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:ems="10"
+        android:hint="Usuario"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="@color/textColor"
+        android:backgroundTint="@color/blueDark"/>
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_below="@id/user"
+        android:layout_marginBottom="40dp"
+        android:layout_centerInParent="true"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textColorHint="@color/textColor"
+        android:backgroundTint="@color/blueDark"/>
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="151dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextTextPassword"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="300dp"
+        android:background="@drawable/shape_button"
+        android:drawableLeft="@drawable/icon_sesion2"
+        android:text="Iniciar Sesión"
+        android:textColor="@color/textColor" />
+
+
+</RelativeLayout>
